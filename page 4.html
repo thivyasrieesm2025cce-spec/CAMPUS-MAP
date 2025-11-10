@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Map Layout</title>
+  <style>
+    body {
+      font-family: "Times New Roman", serif;
+      margin: 40px;
+    }
+
+    .container {
+      display: flex;
+      border: 2px solid black;
+      width: 90%;
+      height: 500px;
+    }
+
+    .map-section {
+      flex: 3;
+      border-right: 2px solid black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .info-section {
+      flex: 1.2;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-left: 2px solid black;
+    }
+
+    .distance {
+      border: 2px solid black;
+      width: 40px;
+      height: 30px;
+      float: right;
+    }
+
+    .text {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .places {
+      border: 2px solid black;
+      background-color: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Left side: Map -->
+    <div class="map-section">
+      MAP
+    </div>
+
+    <!-- Right side: Info -->
+    <div class="info-section">
+      <div>
+        <p class="text">Remaining distance to reach the place</p>
+        <div class="distance"></div>
+      </div>
+
+      <div class="places">
+        The places that are on the way before the exact places
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
